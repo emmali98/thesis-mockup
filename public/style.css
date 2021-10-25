@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+
+div {
+  border: 2px dotted burlywood;
+}
+
+/* CLASSES */
+
+.buffer {
+  padding-bottom: 30%;
+}
+
+.open .text {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-container {
+  position: relative;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 50vw);
+  grid-auto-rows: minmax(50vh, auto);
+}
+
+/* SPECIFIC ELEMENTS */
+
+.open {
+  position: relative;
+}
+
+.panels {
+  grid-column: 1 / 4;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.arm {
+  grid-column: 4;
+  grid-row: 2 / 4;
+}
+
+.down {
+  grid-column: 4 / 6;
+  grid-row: 4 / 6;
+}
