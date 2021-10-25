@@ -1,9 +1,11 @@
 body {
   margin: 0;
+  background: rgb(255,87,0);
+  background: linear-gradient(0deg, rgba(255,87,0,1) 50%, rgb(255, 165, 62) 100%);
 }
 
 div {
-  border: 2px dotted burlywood;
+  /*border: 2px dotted burlywood;*/
 }
 
 /* CLASSES */
@@ -19,6 +21,8 @@ div {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: antiquewhite;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .text-container {
@@ -27,14 +31,16 @@ div {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 50vw);
-  grid-auto-rows: minmax(50vh, auto);
+  grid-template-columns: repeat(5, 70vw);
+  grid-auto-rows: minmax(70vh, auto);
 }
 
 /* SPECIFIC ELEMENTS */
 
 .open {
   position: relative;
+  background: rgb(230,40,0);
+  background: radial-gradient(circle at bottom, rgb(230, 34, 0) 10%, transparent 80%);
 }
 
 .panels {
@@ -42,6 +48,8 @@ div {
   grid-row: 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 5vw;
+  padding-left: 5vw;
 }
 
 .arm {
