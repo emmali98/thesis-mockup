@@ -41,7 +41,9 @@ div {
   left: 25%;
   transform: translate(-50%, -50%);
   color: antiquewhite;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .panels {
@@ -60,15 +62,43 @@ div {
   max-width: 50vw;
 }
 
-.arm {
+.down {
   grid-column: 3;
-  grid-row: 2 / 4;
+  grid-row: 2 / 5;
 }
-.arm img {
+.down .arm-image img {
   max-width: 50vw;
 }
 
-.down {
-  grid-column: 3 / 6;
-  grid-row: 4 / 6;
+.down .text {
+  color:rgb(68, 95, 175);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.first, .second, .third {
+  width: 35vw;
+  margin: auto;
+  padding: 5vh 0;
+}
+.third {
+  padding: 45vh;
+}
+
+.orange {
+  margin: 5% 0;
+  background: radial-gradient(circle at 25% 0%, rgb(255, 81, 0) 10%, rgba(255, 154, 2, 0.623) 50%),
+    radial-gradient(circle at bottom right, rgb(255, 17, 0) 10%, rgba(255, 93, 43, 0.541) 50%);
+  max-width: 50vw;
+  height: 50vh;
+}
+
+.marvin img {
+  margin-left: 40%;
+  margin-top: 5vh;;
+  width: 25vw;
+}
+
+.bunker img{
+  margin-left: 60%;
+  margin-top: 5vh;
+  width: 100vw;
 }
